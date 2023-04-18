@@ -1,8 +1,16 @@
-import React from 'react'
-
 function Footer() {
+  const githubLink = 'https://github.com/ndhoan'
   return (
-    <div>Footer</div>
+    <>
+      <footer>
+        <p>
+          Copyright © 2023 Hoan Nguyen
+          <a aria-label='github' target='_blank' href={githubLink}>
+            <i class='fa-brands fa-github'></i>
+          </a>
+        </p>
+      </footer>
+    </>
   )
 }
 

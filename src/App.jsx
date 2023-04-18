@@ -1,9 +1,10 @@
-import React, { Fragment } from 'react';
-import Navbar from './components/Navbar';
-import Cart from './components/Cart';
-import Hero from './components/Hero';
-import { heroapi, topratesales, popularsales } from './data/data.js';
-import Sales from './components/Sales';
+import React, { Fragment } from 'react'
+import Navbar from './components/Navbar'
+import Cart from './components/Cart'
+import Hero from './components/Hero'
+import { heroapi, topratesales, popularsales } from './data/data.js'
+import Sales from './components/Sales'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
         <Sales ifExists endpoint={popularsales} />
         <Sales endpoint={topratesales} />
       </main>
+      <Footer />
     </Fragment>
-  );
+  )
 }
 
-export default App;
+export default App
